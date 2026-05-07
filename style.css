@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #200f0f;
+    font-family: 'MedievalSharp', 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+}
+
+.form-card {
+    max-width: 680px;
+    width: 100%;
+    background: #1a1a1a;
+    border-radius: 24px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.form-header {
+    background: #0d0d0d;
+    padding: 1.5rem 2rem;
+    border-bottom: 3px solid #8b0000;
+}
+
+.form-header h1 {
+    font-size: 2rem;
+    color: #c0c0c0;
+    font-weight: 600;
+    font-family: 'UnifrakturMaguntia', cursive;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(139, 0, 0, 0.5);
+}
+
+.form-header p {
+    color: #aaaaaa;
+    margin-top: 6px;
+    font-size: 0.9rem;
+    font-family: monospace;
+}
+
+.form-body {
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.input-group {
+    margin-bottom: 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #c0c0c0;
+    font-size: 0.95rem;
+    font-family: 'MedievalSharp', monospace;
+}
+
+.campo {
+    padding: 14px 16px;
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+    border: 2px solid #333333;
+    border-radius: 12px;
+    transition: 0.2s;
+    outline: none;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.campo:focus {
+    border-color: #8b0000;
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.3);
+}
+
+.campo.invalido {
+    border-color: #e63946;
+    background-color: #3a1a1a;
+}
+
+.erro-msg {
+    color: #e63946;
+    font-size: 0.8rem;
+    margin-top: 6px;
+    margin-left: 8px;
+    font-weight: 500;
+    display: none;
+    font-family: monospace;
+}
+
+.btn-enviar {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 40px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'MedievalSharp', monospace;
+    margin-top: 10px;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+.btn-enviar:hover {
+    background-color: #aa0000;
+    transform: scale(1.01);
+}
+
+.btn-enviar:active {
+    transform: scale(0.98);
+}
+
+.feedback-global {
+    margin-top: 24px;
+    padding: 14px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: monospace;
+}
+
+.feedback-sucesso {
+    background-color: #1a3a1a;
+    color: #135413;
+    border-left: 4px solid #2e7d32;
+}
+
+.feedback-erro {
+    background-color: #3a1a1a;
+    color: #e68a8a;
+    border-left: 4px solid #e63946;
+}
+
+.form-footer {
+    background-color: #0d0d0d;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #777777;
+    border-top: 1px solid #222222;
+    font-family: monospace;
+}
+
+@media (max-width: 520px) {
+    .form-body {
+        padding: 1.5rem;
+    }
+    .form-header h1 {
+        font-size: 1.5rem;
+    }
+}
